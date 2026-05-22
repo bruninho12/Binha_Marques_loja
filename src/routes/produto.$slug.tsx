@@ -8,6 +8,7 @@ import {
   getProduct,
   productsByCategory,
   getCategory,
+  type Product,
 } from "@/lib/store-data";
 
 export const Route = createFileRoute("/produto/$slug")({
@@ -161,7 +162,7 @@ function ProductPage() {
             Você também pode gostar
           </h2>
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
-            {related.map((p) => (
+            {related.map((p: Product) => (
               <ProductCard key={p.slug} product={p} />
             ))}
           </div>

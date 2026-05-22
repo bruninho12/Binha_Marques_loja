@@ -2,7 +2,7 @@ import { createFileRoute, notFound } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site/header";
 import { SiteFooter } from "@/components/site/footer";
 import { ProductCard } from "@/components/site/product-card";
-import { getCategory, productsByCategory } from "@/lib/store-data";
+import { getCategory, productsByCategory, type Product } from "@/lib/store-data";
 
 export const Route = createFileRoute("/categoria/$slug")({
   loader: ({ params }) => {
@@ -71,7 +71,7 @@ function CategoryPage() {
           </p>
         ) : (
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {items.map((p) => (
+            {items.map((p: Product) => (
               <ProductCard key={p.slug} product={p} />
             ))}
           </div>
