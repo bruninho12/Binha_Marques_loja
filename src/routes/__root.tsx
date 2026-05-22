@@ -79,13 +79,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Curadoria artesanal de moda feminina, masculina, infantil e artigos de cama e banho. Aconchego em cada detalhe.",
       },
       { name: "author", content: "Binha Marques" },
-      { property: "og:title", content: "Binha Marques — Boutique Atelier" },
+      { property: "og:title", content: "Binha Marques — Estilo, conforto e autoestima em cada look" },
       {
         property: "og:description",
         content: "Moda e bem-estar com curadoria artesanal para você e sua casa.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Binha Marques — Estilo, conforto e autoestima em cada look" },
+      { name: "description", content: "StyleShop Connect is a responsive web application for clothing stores, enabling online sales and secure payment processing." },
+      { property: "og:description", content: "StyleShop Connect is a responsive web application for clothing stores, enabling online sales and secure payment processing." },
+      { name: "twitter:description", content: "StyleShop Connect is a responsive web application for clothing stores, enabling online sales and secure payment processing." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/8e73facf-1b62-442b-93ab-dc7d203f743a/id-preview-00b44237--ca047922-dc93-4bbd-b5f9-5de492ac6684.lovable.app-1779414185136.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/8e73facf-1b62-442b-93ab-dc7d203f743a/id-preview-00b44237--ca047922-dc93-4bbd-b5f9-5de492ac6684.lovable.app-1779414185136.png" },
     ],
     links: [
       {
