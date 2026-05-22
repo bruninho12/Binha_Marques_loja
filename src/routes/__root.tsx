@@ -72,14 +72,20 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Binha Marques — Estilo, conforto e autoestima em cada look" },
+      {
+        name: "description",
+        content:
+          "Curadoria artesanal de moda feminina, masculina, infantil e artigos de cama e banho. Aconchego em cada detalhe.",
+      },
+      { name: "author", content: "Binha Marques" },
+      { property: "og:title", content: "Binha Marques — Boutique Atelier" },
+      {
+        property: "og:description",
+        content: "Moda e bem-estar com curadoria artesanal para você e sua casa.",
+      },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       {
